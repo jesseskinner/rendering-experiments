@@ -1,0 +1,22 @@
+{
+  "name": "rendering-experiments",
+  "version": "1.0.0",
+  "description": "Some experiments comparing client-side and server-side rendering techniques.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseskinner/rendering-experiments.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesseskinner/rendering-experiments/issues"
+  },
+  "homepage": "https://github.com/jesseskinner/rendering-experiments#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
