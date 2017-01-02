@@ -54,16 +54,22 @@
 
                     partial = lines.pop()
 
-                    lines.map(function (link, index) {
+                    const frag = document.createDocumentFragment()
+
+                    lines.forEach(function (link, index) {
                         link = JSON.parse(link)
 
                         var el = document.importNode(node, true)
+                        
                         var a = el.querySelector('a')
                         a.href = link.link
                         a.textContent = link.name
                         a.setAttribute('data-index', index)
-                        list.appendChild(el)
+                        
+                        frag.appendChild(el)
                     })
+                    
+                    list.appendChild(frag)
 
                     if (!result.done) {
                         return go()
